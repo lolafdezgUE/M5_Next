@@ -1,36 +1,76 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Movies World - Next.js
 
-## Getting Started
+Esta es una versión de la aplicación **Movies World** desarrollada con **Next.js**. Permite a los usuarios buscar información sobre películas, ver detalles de películas específicas y explorar una lista de películas mejor calificadas. La aplicación utiliza la API de The Movie Database (TMDb) para obtener los datos de las películas.
 
-First, run the development server:
+## Características
+
+- **Página principal**: Muestra una lista de las películas mejor calificadas.
+- **Buscador**: Permite buscar películas por nombre.
+- **Detalle de película**: Muestra información detallada de una película seleccionada, incluyendo título, descripción, fecha de lanzamiento, calificación, duración, géneros y más.
+
+## Requisitos previos
+
+Antes de comenzar, asegúrate de tener instalado lo siguiente:
+
+- [Node.js](https://nodejs.org/) (versión 16 o superior)
+- [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
+
+## Dependencias necesarias
+
+Estas son las principales dependencias utilizadas en el proyecto:
+
+- **Next.js**: `^13.0.0`
+- **React**: `^18.0.0`
+- **React DOM**: `^18.0.0`
+
+Para instalar todas las dependencias, simplemente ejecuta el comando `npm install` después de clonar el repositorio.
+
+## Instalación
+
+1. Clona este repositorio en tu máquina local:
+
+   ```bash
+   git clone <URL_DEL_REPOSITORIO>
+   ```
+
+2. Navega al directorio del proyecto:
+
+   ```bash
+   cd practica-next
+   ```
+
+3. Instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+## Ejecución en modo desarrollo
+
+Para iniciar la aplicación en modo desarrollo, ejecuta:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Esto abrirá la aplicación en tu navegador en la dirección [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Pruebas de la aplicación
 
-## Learn More
+1. **Explorar películas mejor calificadas**: En la página principal, se muestra una lista de películas mejor calificadas. Haz clic en cualquier película para ver sus detalles.
+2. **Buscar películas**: Utiliza el buscador para encontrar películas por nombre.
+3. **Ver detalles de una película**: Haz clic en una película de los resultados de búsqueda o de la lista principal para ver información detallada.
 
-To learn more about Next.js, take a look at the following resources:
+## Estilos
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+El diseño de la aplicación está definido en el archivo `style.css`, que incluye:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Clases principales
 
-## Deploy on Vercel
+- **`.pelicula`**: Estilo para las tarjetas de las películas, con un diseño atractivo y sombras.
+- **`.buscador`**: Estilo para el buscador, con un diseño centrado y bordes redondeados.
+- **`.boton-regresar`**: Botón para regresar a la página principal, con transiciones suaves.
+- **`.detalle-pelicula`**: Contenedor para los detalles de una película, con un diseño centrado y responsivo.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
